@@ -38,8 +38,8 @@ body, .App {
     .wave svg {
       position: relative;
       display: block;
-      width: calc(100% + 1.3px);
-      height: 234px;
+
+      
     }
 
     .wave .shape-fill {
@@ -52,3 +52,31 @@ body, .App {
   padding: 20px;
   text-align: center;
 }
+.bottom-white-section{
+  background-color: #F9F5FF;
+  padding: 20px;
+  text-align: center;
+  height: 200px;
+}
+
+.wave-bottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.wave-bottom svg {
+  position: relative;
+  display: block;
+  width: calc(148% + 1.3px);
+  height: 500px;
+}
+
+.wave-bottom .shape-fill {
+  fill: #C8B5DF;
+}
+

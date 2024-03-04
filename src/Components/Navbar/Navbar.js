@@ -78,7 +78,7 @@ const Navbar = () => {
           </Link>
 {/* About US drop down */}
                     <div className="about-dropdown" onMouseEnter={() => setShowFlagsDropdown(false)}> 
-                      <Link to="/олаборатории" className="hover:text-bgvioletColor transition-all cursor-pointer"> 
+                      <Link to="/услуги" className="hover:text-bgvioletColor transition-all cursor-pointer"> 
                         {getLinkText("about")}
                       </Link>
                       <div className="about-dropdown-menu">
@@ -91,7 +91,7 @@ const Navbar = () => {
                     </div>
 {/* For patients drop down */}
                   <div className="about-dropdown" onMouseEnter={() => setShowFlagsDropdown(false)}> 
-                    <Link to="/олаборатории" className="hover:text-bgvioletColor transition-all cursor-pointer"> 
+                    <Link to="/стоимостьлабораторныхуслуг" className="hover:text-bgvioletColor transition-all cursor-pointer"> 
                       {getLinkText("services")}
                     </Link>
                     <div className="about-dropdown-menu">
@@ -104,7 +104,7 @@ const Navbar = () => {
                   </div>
 {/* For doctors drop down */}
                   <div className="about-dropdown" onMouseEnter={() => setShowFlagsDropdown(false)}> 
-                    <Link to="/олаборатории" className="hover:text-bgvioletColor transition-all cursor-pointer"> 
+                    <Link to="/стоимостьлабораторныхуслуг" className="hover:text-bgvioletColor transition-all cursor-pointer"> 
                       {getLinkText("specialists")}
                     </Link>
                     <div className="about-dropdown-menu">

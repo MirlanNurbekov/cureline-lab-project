@@ -199,3 +199,91 @@
 .about-dropdown:hover .about-dropdown-menu {
   display: block;
 }
+
+
+
+
+
+
+/* Login Popup Styles */
+.login-popup {
+  position: fixed; /* Positioned relative to the viewport */
+  top: 0;
+  left: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  background-color: rgba(0, 0, 0, 0.5); /* Black background with opacity */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; /* Ensure it's above other content */
+}
+
+.login-popup-content {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 350px; /* Increased width */
+  position: relative;
+}
+
+.close-popup {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.login-popup h2 {
+  color: #512D6D; /* Matching the theme */
+  margin-bottom: 20px;
+}
+
+.login-popup input[type="text"],
+.login-popup input[type="password"] {
+  width: calc(100% - 20px); /* Full width minus padding */
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+.login-popup button {
+  margin-left: 50px; /* Adds space to the left of Login */
+  background-color: #887499;
+  color: #fff;
+  border: none;
+  padding: 10px 80px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.login-popup button:hover {
+  background-color: #a8a0b9; /* Slightly lighter on hover */
+}
+
+.popup-actions {
+  display: flex;
+  justify-content: flex-end; /* Aligns items to the right */
+  align-items: center;
+  margin-top: 20px; /* Adds space above the button line */
+}
+
+.cancel-action {
+  margin-right: 20px; /* Adds space to the right of Cancel */
+  color: #787878;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+/* Hover effect for both Cancel and Register actions */
+.cancel-action:hover, .register-btn:hover {
+  text-decoration: none; /* Change or remove underline on hover */
+}
+
+.register-action {
+  text-align: center; /* Centers the Register action */
+  margin-top: 15px; /* Adds some space above for visual separation */
+}

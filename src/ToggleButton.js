@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-function Home() {
+function ToggleButton() {
   const [buttonText, setButtonText] = useState('Show Text');
 
   const handleClick = () => {
@@ -12,4 +12,4 @@ function Home() {
   );
 }
 
-export default Home
+export default ToggleButton;
